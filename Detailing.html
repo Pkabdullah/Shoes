@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <link rel="stylesheet" href="Style.css"> -->
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="back">
+        <a href="shoes.html">
+            <span class="material-symbols-outlined">
+                keyboard_return
+            </span></a>
+    </div>
+    <div class="about">
+
+        <div class="about_main">
+            <div class="about_image">
+                <div class="about_small_image">
+                    <img src="img/showcase/shoe1-2/img1.png" onclick="functio(this)">
+                    <img src="img/showcase/shoe1-2/img2.png" onclick="functio(this)">
+                    <img src="img/showcase/shoe1-2/img3.png" onclick="functio(this)">
+                    <img src="img/showcase/shoe1-2/img4.png" onclick="functio(this)">
+                </div>
+                <div class="image_container">
+                    <img src="img/showcase/shoe1-2/img1.png" id="imagebox">
+                </div>
+            </div>
+            <div class="about_text">
+                <h3>Sample Product</h3>
+                <!-- <div class="siz">
+                    <h4>Size</h4>
+                    <ul class="sizes">
+                        <li class="size-active">37</li>
+                        <li>38</li>
+                        <li>40</li>
+                        <li>41</li>
+                        <li>42</li>
+                    </ul>
+                </div> -->
+                <h4><span>PKR</span>.29999</h4>
+
+                <div class="count">
+                    <h1>Quantity <span id="counter">0</span></h1>
+
+                    <button onclick="decrement()">-</button>
+                    <button onclick="increment()">+</button>
+                </div>
+
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Qui necessitatibus voluptatem recusandae numquam, quis
+                    temporibus magnam? Neque quis commodi a.</p>
+
+                <button class="button">
+                    Add to Cart
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        let counter = 0;
+
+        function updateCounter() {
+            document.getElementById('counter').innerText = counter;
+        }
+
+        function increment() {
+            counter++;
+            updateCounter();
+        }
+
+        function decrement() {
+            counter--;
+            updateCounter();
+        }
+    </script>
+
+    <script src="myjava.js"></script>
+</body>
+
+</html>

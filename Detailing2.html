@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="detail.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="about">
+        <div class="back">
+            <a href="shoes.html">
+            <span class="material-symbols-outlined">
+                keyboard_return
+                </span></a></div>
+    <div class="about_main">
+        <div class="about_image">
+            <div class="about_small_image">
+                <img src="img/showcase/shoe2-2/img1.png" onclick="functio(this)">
+                <img src="img/showcase/shoe2-2/img2.png" onclick="functio(this)">
+                <img src="img/showcase/shoe2-2/img3.png" onclick="functio(this)">
+                <img src="img/showcase/shoe2-2/img4.png" onclick="functio(this)">
+            </div>
+            <div class="image_container">
+                <img src="img/showcase/shoe2-2/img1.png" id="imagebox">
+            </div>
+        </div>
+        <div class="about_text">
+            <h3>Sample Product</h3>
+            <h4><span>PKR</span>.29999</h4>
+            <div class="count">
+                <h1 >Quantity <span id="counter">0</span></h1>
+
+                <button onclick="decrement()">-</button>
+                <button onclick="increment()">+</button></div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Qui necessitatibus voluptatem recusandae numquam, quis 
+                 temporibus magnam? Neque quis commodi a.</p>
+
+                 <button class="button">
+                    Add to Cart
+                  </button>
+        </div>
+    
+    </div>
+</div>
+
+<script>
+
+    let counter = 0;
+
+    function updateCounter() {
+        document.getElementById('counter').innerText = counter;
+    }
+
+    function increment() {
+        counter++;
+        updateCounter();
+    }
+
+    function decrement() {
+        counter--;
+        updateCounter();
+    }
+</script>
+<script src="myjava.js"></script>
+</body>
+
+</html>

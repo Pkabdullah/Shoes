@@ -1,0 +1,192 @@
+body {
+    background: linear-gradient(to right, rgb(163, 161, 161), rgb(161, 220, 240));
+
+}
+
+.about {
+    margin-top: 250px;
+}
+
+.about .about_main {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .about_image .about_small_image {
+    margin-left: 50px;
+}
+
+.about .about_main .about_image .about_small_image img {
+    height: 50px;
+    width: 130px;
+    margin: 15px 0;
+    cursor: pointer;
+    background: gray;
+    display: block;
+    border-radius: 6px;
+    padding: 15px 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+    opacity: 0.8;
+    transition: 0.3s;
+
+}
+
+.about .about_main .about_image {
+    display: flex;
+    margin-top: 50px;
+}
+
+.about .about_main .about_image .about_small_image {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 15px;
+}
+
+.about .about_main .about_image .about_small_image img:hover {
+    opacity: 1;
+}
+
+.about .about_main .image_container {
+    padding: 10px;
+    display: flex;
+    margin-right: 200px;
+    margin-left: 150px;
+}
+
+.about .about_main .image_container img {
+
+    border-radius: 15px;
+    height: 430px;
+    width: 450px;
+    height: 200px;
+    margin-top: 150px;
+
+}
+
+.about .about_main .about_text {
+    margin-top: 45px;
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+
+    margin-right: 100px;
+
+
+}
+
+.about .about_main .about_text h3 {
+    font-size: xx-large;
+}
+
+.about .about_main .about_text h4 {
+    color: gray;
+}
+
+.about .about_main .about_text h4 span {
+    color: black;
+}
+
+.about .about_main .about_text p {
+    font-size: small;
+    color: rgb(77, 75, 75);
+    text-align: justify;
+}
+
+.about .about_main .about_text .button {
+    margin-top: 80px;
+}
+.about .about_main .about_text .siz  ul {
+    display: flex;
+    margin-bottom:20px ;
+}
+
+
+/* button */
+
+
+.button {
+    position: relative;
+    width: 120px;
+    height: 40px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: -4px;
+    top: -1px;
+    margin: auto;
+    width: 128px;
+    height: 48px;
+    border-radius: 10px;
+    background: linear-gradient(-45deg, #e81cff 0%, #40c9ff 100%);
+    z-index: -10;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100%);
+    transform: translate3d(0, 0, 0) scale(0.95);
+    filter: blur(20px);
+}
+
+.button:hover::after {
+    filter: blur(30px);
+}
+
+.button:hover::before {
+    transform: rotate(-180deg);
+}
+
+.button:active::before {
+    scale: 0.7;
+}
+
+/* back */
+
+.back .material-symbols-outlined {
+    margin-top: 50px;
+    margin-left: 100px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.back .material-symbols-outlined:hover{
+    text-decoration: underline;
+    color: black;
+}
+
+#counter{
+    font-size: large;
+    color: gray;
+}
+
+.count h1 {
+    font-size: large;
+}
+.count button {
+    border-radius: 100%;
+    border: none;
+    font-size: larger;
+}
