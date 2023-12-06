@@ -73,7 +73,7 @@ const descriptions = [
 const ratings = [4, 5, 3];
 
 function getImage(id, imgType, shoe, colorType, extension) {
-    return ("img/" + imgType + "/shoe" + shoe + "-" + colorType + "/img" + id + "." + extension );
+    return ("img/" + imgType + "/shoe" + shoe + "-" + colorType + "/img" + id + "." + extension);
 }
 // reset active state to buttons
 
@@ -237,3 +237,8 @@ for (let i = 0; i < pag.length; i++) {
     });
 }
 
+
+function functio(small) {
+    var full = document.getElementById("imagebox")
+    full.src = small.src
+}
